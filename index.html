@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>capilla de santa clara</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--estructurando_menu_de_navegacion-->
+    <div class="conentedor_general_1">
+        <h1 class="titulo_logo">csc</h1>
+        <div class="menu_de_navegacion">
+            <p class="opcion"><a href="inicio.hml" class="seleccionar_opcion">inicio</a></p>
+            <p class="opcion"><a href="nosotros.hml" class="seleccionar_opcion">nosotros</a></p>
+            <p class="opcion"><a href="contactanos.hml" class="seleccionar_opcion">contactanos</a></p>
+            <p class="opcion"><a href="entrar.hml" class="seleccionar_opcion">entrar</a></p>
+        </div>
+    </div>
+    <!--estructurando_carrusel-->
+    <div class="slider">
+        <div class="slides">
+            <img src="imagen_3.jpg" alt="Imagen 1">
+            <img src="imagen_3.jpg" alt="Imagen 2">
+            <img src="imagen_3.jpg" alt="Imagen 3">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div class="indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!--estructurando_categorias-->
+    <div class="conentedor_general_2">
+        <section class="noticias">
+            <div class="noticia-categoria">
+                <div class="noticia-contenedor">
+                    <img src="imagen_3.jpg" alt="Imagen de la noticia">
+                    <h2>Título de la noticia</h2>
+                    <h3>Subtítulo</h3>
+                    <p>Este es un breve resumen o introducción a la noticia interesante que aparece en esta categoría. Descubre más detalles.</p>
+                    <button>Ingresar</button>
+                </div>
+                <div class="noticia-contenedor">
+                    <img src="imagen_3.jpg" alt="Imagen de la noticia">
+                    <h2>Título de la noticia 2</h2>
+                    <h3>Subtítulo 2</h3>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <button>Ingresar</button>
+                </div>
+                <div class="noticia-contenedor">
+                    <img src="imagen_3.jpg" alt="Imagen de la noticia">
+                    <h2>Título de la noticia 2</h2>
+                    <h3>Subtítulo 2</h3>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <button>Ingresar</button>
+                </div>
+                <div class="noticia-contenedor">
+                    <img src="imagen_3.jpg" alt="Imagen de la noticia">
+                    <h2>Título de la noticia 2</h2>
+                    <h3>Subtítulo 2</h3>
+                    <p>Este es un breve resumen o introducción a la segunda noticia interesante.</p>
+                    <button>Ingresar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--estructurando_calendario-->
+    <div class="conentedor_general_3">
+        <div class="calendario">
+            <div class="mes">
+                <h2 id="mes-anio">Octubre 2024</h2>
+            </div>
+            <div class="dias-semana">
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+                <div>Dom</div>
+            </div>
+            <div id="dias" class="dias">
+                <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+                <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+                <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+                <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div>
+                <div>27</div><div>28</div><div>29</div><div>30</div><div>31</div><div></div><div></div>
+            </div>
+        </div>
+    </div>
+    <!--estructurando_notificaciones-->
+    <div class="conentedor_general_4">
+        <div class="notificacion">
+            <h2 class="titulo-notificacion">Título de la Notificación</h2>
+            <h3 class="subtitulo-notificacion">Subtítulo de la Notificación</h3>
+            <p class="parrafo-notificacion">
+                Este es el mensaje de la notificación. Aquí puedes proporcionar detalles importantes relacionados con la notificación.
+            </p>
+        </div>
+    </div>
+    <!--estructurando_galeria-->
+    <div class="conentedor_general_5">
+        <div class="galeria">
+            <div class="media-item">
+                <img src="media/fotos/foto1.jpg" alt="Foto 1" class="imagen">
+            </div>
+            <div class="media-item">
+                <img src="media/fotos/foto2.jpg" alt="Foto 2" class="imagen">
+            </div>
+            <div class="media-item">
+                <video controls class="video">
+                    <source src="media/videos/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+        <div class="galeria">
+            <div class="media-item">
+                <img src="media/fotos/foto1.jpg" alt="Foto 1" class="imagen">
+            </div>
+            <div class="media-item">
+                <img src="media/fotos/foto2.jpg" alt="Foto 2" class="imagen">
+            </div>
+            <div class="media-item">
+                <video controls class="video">
+                    <source src="media/videos/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+        <div class="galeria">
+            <div class="media-item">
+                <video controls class="video">
+                    <source src="media/videos/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <div class="media-item">
+                <img src="media/fotos/foto1.jpg" alt="Foto 1" class="imagen">
+            </div>
+            <div class="media-item">
+                <img src="media/fotos/foto2.jpg" alt="Foto 2" class="imagen">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-enlaces">
+                <h4>Enlaces útiles</h4>
+                <ul class="enlaces-footer">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 TuNombre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

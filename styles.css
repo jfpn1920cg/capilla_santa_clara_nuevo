@@ -1,0 +1,348 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(131, 131, 131);
+}
+/*estilizando_menu_de_navegacion*/
+.conentedor_general_1{
+    width: 1349px;
+    margin-top: -20px;
+    margin-left: -8px;
+    background: rgb(163, 163, 163);
+}
+.titulo_logo{   
+    margin-left: 5px;
+}
+.menu_de_navegacion{
+    margin-top: -62px;
+    margin-left: 910px;
+}
+.opcion{
+    margin-left: 50px;
+    display: inline-block;
+}
+.seleccionar_opcion{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*estilizando_carrusel*/
+.slider {
+    width: 1349px;
+    height: 760px;
+    margin-top: 0px;
+    margin-left: -8px;
+    position: relative;
+    overflow: hidden;
+}
+.slides img {
+    width: 100%;
+    display: none;
+}
+.slides img:first-child {
+    display: block;
+}
+.prev, .next {
+    padding: 10px;
+    font-size: 18px;
+    top: 50%;
+    transition: 0.6s ease;
+    position: absolute;
+    width: auto;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(255, 255, 255);
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.indicators {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(187, 187, 187);
+}
+.dot.active {
+    background-color: rgb(113, 113, 113);
+}
+/*estilizando_categorias*/
+.conentedor_general_2{
+    margin-top: 55px;
+    margin-left: 38px;
+}
+.noticias {
+    margin-top: 20px;
+    width: 700px;
+}
+.noticias h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+.noticia-categoria {
+    margin-top: -20px;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+}
+.noticia-contenedor {
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+}
+.noticia-contenedor img {
+    width: 100%;
+    height: auto;
+}
+.noticia-contenedor h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: rgb(51, 51, 51);
+}
+.noticia-contenedor h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: rgb(119, 119, 119);
+}
+.noticia-contenedor p {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+}
+.noticia-contenedor button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+.noticia-contenedor button:hover {
+    background-color: rgb(0, 86, 179);
+}
+/*estilizando_calendario*/
+.conentedor_general_3{
+    margin-left: 730px;
+    margin-top: -1000px;
+}
+.calendario {
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: rgb(230, 230, 230);
+}
+.mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mes h2 {
+    font-size: 40px; 
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+.boton-cambio {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+.boton-cambio:hover {
+    background-color: rgb(0, 86, 179);
+}
+.dias-semana {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: rgb(102, 102, 102);
+}
+.dias {
+    gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    display: grid;
+    text-align: center; 
+}
+.dias div {
+    padding: 15px;  
+    font-size: 18px; 
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(249, 249, 249);
+    color: rgb(51, 51, 51);
+}
+.dias div:hover {
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+.dias div:empty {
+    background-color: transparent;
+    border: none;
+}
+/*estilizando_notificaciones*/
+.conentedor_general_4{
+    margin-left: 730px;
+    margin-top: 40px;
+}
+.titulo-principal {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+.notificacion {
+    padding: 20px;
+    width: 513px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    background-color: rgb(233, 245, 255);
+    border-left: 6px solid rgb(0, 123, 255);
+}
+.titulo-notificacion {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+}
+.subtitulo-notificacion {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(102, 102, 102);
+}
+.parrafo-notificacion {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+}
+/*estilizando_galeria*/
+.conentedor_general_5{
+    margin-top: -25px;
+}
+h1.titulo-galeria {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*estilos_de_la_galería */
+.conentedor_general_5{
+    margin-left: 730px;
+    margin-top: -5px;
+}
+.galeria {
+    gap: 20px;
+    width: 560px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.media-item {
+    width: 200px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+.media-item img, .media-item video {
+    width: 100%;
+    height: auto;
+}
+button#visualizar-galeria {
+    margin-top: 10px;
+    margin-left: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+button#visualizar-galeria:hover {
+    background-color: rgb(0, 86, 179);
+}
+.lista-medios {
+    margin-top: 20px;
+    text-align: center;
+}
+.lista-medios ul {
+    padding: 0;
+    list-style-type: none;
+}
+.lista-medios li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(85, 85, 85);
+}
+.oculto {
+    display: none;
+}
+/*estilizando_pie_de_pagina*/
+.footer {
+    margin-top: 10px;
+    padding: 20px 0;
+    width: 100%; 
+    bottom: 0; 
+    left: 0;
+    text-align: center;
+    position: relative;
+    background-color: rgb(34, 34, 34);
+    color: rgb(221, 221, 221);
+}
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-info {
+    margin-bottom: 15px;
+}
+.footer-enlaces {
+    text-align: center;
+}
+.footer-enlaces h4 {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.enlaces-footer {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.enlaces-footer li {
+    margin: 0 15px;
+}
+.enlaces-footer a {
+    transition: color 0.3s;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+.enlaces-footer a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
